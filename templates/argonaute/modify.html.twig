@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Modification
+{% endblock %}
+
+{% block body %}
+
+	<div class="container">
+		{{ form_start(modify_argonaute_form) }}
+		<div class="row justify-content-center mt-5">
+			<h1 class="text-center">Modifier l'argonaute</h1>
+			<div class="col-6">
+				<div class="form-group">
+					{{ form_row(modify_argonaute_form.name) }}
+				</div>
+				<div class="form-group text-center">
+					{{ form_row(modify_argonaute_form.submit) }}
+				</div>
+			</div>
+		</div>
+		{{ form_end(modify_argonaute_form) }}
+	</div>
+
+{% endblock %}
